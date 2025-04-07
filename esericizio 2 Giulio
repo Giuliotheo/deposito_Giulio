@@ -1,0 +1,34 @@
+
+#esercizio 2
+
+lista = ["pane", "latte", "uova"]
+
+print("Scegli un'opzione:")
+print("1 - Aggiungi")
+print("2 - Rimuovi")
+print("3 - Svuota lista")
+
+scelta = input("Cosa vuoi fare? ")
+
+if scelta == "1":
+    parola = input("Scrivi la parola da aggiungere: ")
+    lista.append(parola)
+    print("Parola aggiunta!")
+    print(lista)
+
+elif scelta == "2":
+    parola = input("Scrivi la parola da rimuovere: ")
+    if parola in lista:
+        lista.remove(parola)
+        print("Parola rimossa!")
+    else:
+        print("Parola non trovata!")
+    print(lista)
+
+elif scelta == "3":
+    lista.clear()
+    print("Lista svuotata!")
+    print(lista)
+
+else:
+    print("Scelta non valida!")
