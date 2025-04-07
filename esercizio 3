@@ -1,0 +1,19 @@
+
+#esercizio 3
+
+utenti = ["Giulio", "Anna"]
+
+scelta = input("Vuoi creare un nuovo account? (sì/no): ")
+
+if scelta == "sì":
+    nome = input("Inserisci il tuo nome: ")
+    utenti.append(nome)
+    print("Account creato!")
+    print("Lista utenti aggiornata:", utenti)
+
+else:
+    nome = input("Inserisci il tuo nome per accedere: ")
+    if nome in utenti:
+        print("Accesso riuscito! Bentornato", nome)
+    else:
+        print("Utente non trovato. Accesso negato.")
