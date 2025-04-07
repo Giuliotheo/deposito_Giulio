@@ -1,0 +1,19 @@
+
+#esercizio 1
+
+nome = input("Come ti chiami? ")
+
+if nome == "Giulio":
+    colore = input("Qual è il tuo colore preferito? ")
+    
+    if colore == "blu":
+        animale = input("Qual è il tuo animale preferito? ")
+        
+        if animale == "cane":
+            print("Bravo! Hai superato tutti i controlli!")
+        else:
+            print("Animale sbagliato!")
+    else:
+        print("Colore sbagliato!")
+else:
+    print("Nome sbagliato!")
