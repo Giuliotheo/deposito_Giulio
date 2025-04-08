@@ -1,13 +1,15 @@
 
-# Prende in input un numero
-numero = int(input("Inserisci un numero: "))
+#esercizio 1
+while True:
+    # Prende in input un numero
 
-# Controlla se è pari o dispari
-if numero % 2 == 0:
-    print("Pari")
-else:
-    print("Dispari")
-    
+    numero = int(input("Inserisci un numero: "))
+    # Controlla se è pari o dispari
+    if numero % 2 == 0:
+        print("Pari")
+    else:
+        print("Dispari")
+        break    
     
     
     
